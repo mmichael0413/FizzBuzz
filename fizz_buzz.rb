@@ -24,10 +24,8 @@ class FizzBuzz
   end
 
   def welcome!
-    unless ENV['RUBY_ENV'] == 'test'
-      print 'Enter FizzBuzz Stage (1 or 2): '
-      STDIN.gets.chomp.to_i
-    end
+    print 'Enter FizzBuzz Stage (1 or 2): '
+    gets.chomp.to_i
   end
 
 end
